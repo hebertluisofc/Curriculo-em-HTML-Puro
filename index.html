@@ -5,18 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hebert Luís — Currículo HTML</title>
   <link rel="icon" href="Imagens/Icone/favicon.ico" type="image/x-icon">
-
 </head>
 <body style="font-family: Arial, Helvetica, sans-serif; line-height:1.5; color:#111; margin:18px;">
 
-  <!-- Container principal -->
   <div style="max-width:900px; margin:0 auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
 
-    <!-- Cabeçalho -->
     <header style="display:flex; gap:18px; align-items:center; margin-bottom:14px;">
-      <!-- Inserir foto: substitua src pela URL/arquivo da sua foto -->
       <div style="flex:0 0 120px; height:120px; border-radius:8px; overflow:hidden; background:#f0f0f0; display:flex; align-items:center; justify-content:center;">
-        <!-- Coloque aqui a sua foto -->
         <img id="foto-pessoal" src="Imagens/Hebert.png" alt="Foto de Hebert Luís" style="width:100%; height:100%; object-fit:cover;">
       </div>
 
@@ -30,7 +25,6 @@
       </div>
     </header>
 
-    <!-- Sobre -->
     <section style="margin-bottom:16px;">
       <h2 style="margin:0 0 8px 0; font-size:18px;">Sobre</h2>
       <p style="margin:0; color:#333;">
@@ -39,7 +33,6 @@
       <p style="margin:8px 0 0 0;">Aberto a conexões, colaborações e projetos nas áreas de educação musical, produção artística e tecnologia aplicada à música.</p>
     </section>
 
-    <!-- Experiência -->
     <section style="margin-bottom:16px;">
       <h2 style="margin:0 0 8px 0; font-size:18px;">Experiência</h2>
 
@@ -65,7 +58,6 @@
       </article>
     </section>
 
-    <!-- Educação -->
     <section style="margin-bottom:16px;">
       <h2 style="margin:0 0 8px 0; font-size:18px;">Formação</h2>
 
@@ -88,7 +80,6 @@
       </div>
     </section>
 
-    <!-- Certificações -->
     <section style="margin-bottom:16px;">
       <h2 style="margin:0 0 8px 0; font-size:18px;">Certificações & Cursos</h2>
 
@@ -109,15 +100,8 @@
           <img src="Imagens/Certificados/partitura.jpeg" style="width:140px; height:90px; object-fit:cover; border-radius:4px;">  
         </li>
       </ul>
-
-      <!-- Espaço para fotos dos certificados -->
-      <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
-        <!-- Insira as imagens dos certificados aqui -->
-        <!-- exemplo: <img src="certificado1.jpg" alt="Certificado - Curso de Composição" style="width:140px; height:90px; object-fit:cover; border-radius:4px;"> -->
-      </div>
     </section>
 
-    <!-- Competências -->
     <section style="margin-bottom:16px;">
       <h2 style="margin:0 0 8px 0; font-size:18px;">Competências</h2>
       <ul style="margin:0; padding-left:20px; color:#333;">
@@ -130,14 +114,12 @@
       </ul>
     </section>
 
-    <!-- Reconhecimentos -->
     <section style="margin-bottom:16px;">
       <h2 style="margin:0 0 8px 0; font-size:18px;">Reconhecimentos</h2>
       <p style="margin:0; color:#333;">Liderança de Classe — Colégio Nossa Senhora de Fátima Sacramentinas (Set de 2023)</p>
       <img src="Imagens/Certificados/lideranca.jpeg" style="width:140px; height:90px; object-fit:cover; border-radius:4px;">  
     </section>
 
-    <!-- Rodapé / Contato -->
     <footer style="border-top:1px solid #eee; padding-top:12px; margin-top:10px; font-size:14px; color:#555;">
       <p style="margin:0 0 6px 0;"><strong>Contato</strong></p>
       <ul style="margin:0; padding-left:18px; list-style-type:none;">
@@ -149,5 +131,179 @@
 
   </div>
 
+  <section id="newsletter" aria-labelledby="titulo-newsletter" style="max-width:900px; margin:16px auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
+    <h2 id="titulo-newsletter" style="margin:0 0 8px 0; font-size:18px;">Assine a Newsletter</h2>
+    <p style="margin:0 0 10px 0; color:#333;">Receba conteúdos sobre piano, teoria musical e tecnologia aplicada à música. É rápido e você pode cancelar a qualquer momento.</p>
+
+    <form action="#" method="post" style="display:grid; gap:12px;" aria-describedby="newsletter-ajuda">
+      <small id="newsletter-ajuda" style="color:#666;">Campos com * são obrigatórios.</small>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div>
+          <label for="nl-nome" style="display:block; font-weight:600;">Nome *</label>
+          <input id="nl-nome" name="nome" type="text" required placeholder="Seu nome completo" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;" />
+        </div>
+        <div>
+          <label for="nl-email" style="display:block; font-weight:600;">Email *</label>
+          <input id="nl-email" name="email" type="email" required placeholder="voce@email.com" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;" />
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div>
+          <label for="nl-telefone" style="display:block; font-weight:600;">Telefone</label>
+          <input id="nl-telefone" name="telefone" type="tel" placeholder="(77) 90000-0000" pattern="\(\d{2}\) \d{4,5}-\d{4}" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;" />
+        </div>
+        <div>
+          <label for="nl-cidade" style="display:block; font-weight:600;">Cidade</label>
+          <input id="nl-cidade" name="cidade" type="text" list="lista-cidades" placeholder="Ex.: Vitória da Conquista" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;" />
+          <datalist id="lista-cidades">
+            <option value="Vitória da Conquista"></option>
+            <option value="Salvador"></option>
+            <option value="Rio de Janeiro"></option>
+            <option value="São Paulo"></option>
+          </datalist>
+        </div>
+      </div>
+
+      <fieldset style="border:1px solid #eee; border-radius:8px; padding:12px;">
+        <legend style="font-weight:600;">Quais temas você quer receber? *</legend>
+        <label style="display:block; margin:4px 0;"><input type="checkbox" name="temas" value="piano" required> Piano</label>
+        <label style="display:block; margin:4px 0;"><input type="checkbox" name="temas" value="teoria"> Teoria Musical</label>
+        <label style="display:block; margin:4px 0;"><input type="checkbox" name="temas" value="tecnologia"> Tecnologia & Educação</label>
+      </fieldset>
+
+      <fieldset style="border:1px solid #eee; border-radius:8px; padding:12px;">
+        <legend style="font-weight:600;">Periodicidade preferida</legend>
+        <label style="display:block; margin:4px 0;"><input type="radio" name="periodicidade" value="semanal" checked> Semanal</label>
+        <label style="display:block; margin:4px 0;"><input type="radio" name="periodicidade" value="quinzenal"> Quinzenal</label>
+        <label style="display:block; margin:4px 0;"><input type="radio" name="periodicidade" value="mensal"> Mensal</label>
+      </fieldset>
+
+      <div>
+        <label for="nl-formato" style="display:block; font-weight:600;">Formato de conteúdo</label>
+        <select id="nl-formato" name="formato" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;">
+          <option value="html">HTML (recomendado)</option>
+          <option value="texto">Somente texto</option>
+          <option value="pdf">Resumo em PDF</option>
+        </select>
+      </div>
+
+      <label style="display:block; font-size:13px; color:#444;">
+        <input type="checkbox" name="consentimento" required> Autorizo o envio de emails e concordo com a política de privacidade.
+      </label>
+
+      <div style="display:flex; gap:10px; align-items:center;">
+        <button type="submit" style="cursor:pointer; padding:10px 14px; border:none; border-radius:8px; background:#0a66c2; color:#fff; font-weight:600;">Quero receber</button>
+        <button type="reset" style="cursor:pointer; padding:10px 14px; border:1px solid #ddd; border-radius:8px; background:#fff;">Limpar</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="tabela-competencias" aria-labelledby="titulo-competencias-tabela" style="max-width:900px; margin:16px auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
+    <h2 id="titulo-competencias-tabela" style="margin:0 0 8px 0; font-size:18px;">Resumo de Competências (Tabela)</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%; border-collapse:collapse; font-size:14px;">
+        <caption style="text-align:left; margin-bottom:6px; color:#555;">Classificação por área e nível de conforto atual</caption>
+        <thead>
+          <tr>
+            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Área</th>
+            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Habilidades</th>
+            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Nível</th>
+            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Aplicações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Música</th>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Piano, teoria, harmonia, percepção</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Avançado</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Aulas, arranjos, prática de conjunto</td>
+          </tr>
+          <tr>
+            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Educação</th>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Didática, liderança, materiais didáticos</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Avançado</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Planejamento de aulas e projetos</td>
+          </tr>
+          <tr>
+            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Tecnologia</th>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Programação, soluções digitais, design</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Intermediário</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Ferramentas para educação musical</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="agenda" aria-labelledby="titulo-agenda" style="max-width:900px; margin:16px auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
+    <h2 id="titulo-agenda" style="margin:0 0 8px 0; font-size:18px;">Agenda de Disponibilidade</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%; border-collapse:collapse; font-size:14px;">
+        <caption style="text-align:left; margin-bottom:6px; color:#555;">Horários sujeitos a ajuste conforme calendário escolar</caption>
+        <thead>
+          <tr>
+            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Dia</th>
+            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Manhã</th>
+            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Tarde</th>
+            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Noite</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Segunda</th>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Aulas</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
+          </tr>
+          <tr>
+            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Terça</th>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Disponível</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Ensaios</td>
+          </tr>
+          <tr>
+            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Quarta</th>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Aulas</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Disponível</td>
+          </tr>
+          <tr>
+            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Quinta</th>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Disponível</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
+          </tr>
+          <tr>
+            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Sexta</th>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Projetos</td>
+            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="titulo-faq" style="max-width:900px; margin:16px auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
+    <h2 id="titulo-faq" style="margin:0 0 8px 0; font-size:18px;">Dúvidas Frequentes</h2>
+    <details style="border:1px solid #eee; border-radius:8px; padding:10px; margin-bottom:8px;">
+      <summary style="cursor:pointer; font-weight:600;">Você atende aulas particulares?</summary>
+      <p style="margin:8px 0 0 0;">Sim, mediante disponibilidade na agenda acima. Use o formulário de newsletter para indicar interesse.</p>
+    </details>
+    <details style="border:1px solid #eee; border-radius:8px; padding:10px;">
+      <summary style="cursor:pointer; font-weight:600;">Quais níveis você atende?</summary>
+      <p style="margin:8px 0 0 0;">Do iniciante ao intermediário/avançado em teoria musical, e do iniciante ao intermediário em piano.</p>
+    </details>
+  </section>
+
+  <aside id="download" aria-label="Download do currículo" style="max-width:900px; margin:16px auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06); background:#fafafa;">
+    <p style="margin:0;">Quer compartilhar este currículo?</p>
+    <div style="margin-top:8px; display:flex; gap:10px;">
+      <a href="#" style="cursor:pointer; padding:10px 14px; border:none; border-radius:8px; background:#0a66c2; color:#fff; text-decoration:none; font-weight:600;">Baixar em PDF</a>
+      <a href="#" style="cursor:pointer; padding:10px 14px; border:1px solid #ddd; border-radius:8px; background:#fff; text-decoration:none;">Versão para impressão</a>
+    </div>
+  </aside>
 </body>
 </html>
