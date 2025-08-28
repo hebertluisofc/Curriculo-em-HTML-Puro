@@ -1,309 +1,92 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hebert Luís — Currículo HTML</title>
-  <link rel="icon" href="Imagens/Icone/favicon.ico" type="image/x-icon">
-</head>
-<body style="font-family: Arial, Helvetica, sans-serif; line-height:1.5; color:#111; margin:18px;">
+<!DOCTYPE html>
 
-  <div style="max-width:900px; margin:0 auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula Básica de CSS</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
 
-    <header style="display:flex; gap:18px; align-items:center; margin-bottom:14px;">
-      <div style="flex:0 0 120px; height:120px; border-radius:8px; overflow:hidden; background:#f0f0f0; display:flex; align-items:center; justify-content:center;">
-        <img id="foto-pessoal" src="Imagens/Hebert.png" alt="Foto de Hebert Luís" style="width:100%; height:100%; object-fit:cover;">
-      </div>
+    <body>
 
-      <div style="flex:1;">
-        <h1 style="margin:0 0 4px 0; font-size:26px;">Hebert Luís <span title="Selo de verificação" style="font-size:16px; color:#0a66c2; margin-left:8px;">✔</span></h1>
-        <p style="margin:0; font-weight:600;">Pianista · Professor de Música · Entusiasta em Tecnologia</p>
-        <p style="margin:6px 0 0 0; color:#555;">Vitória da Conquista, Bahia, Brasil</p>
-        <p style="margin:8px 0 0 0; font-size:14px; color:#333;">
-          Conservatório Municipal de Música de Vitória da Conquista · Professor de Música
-        </p>
-      </div>
-    </header>
+        <!-- Cabeçalho - id (Identificador único) - class (Classe reutilizável)-->
+        <header class="header">
+            <div class="profile-photo"></div>
+            <h1 class="main-title">Meu Primeiro Site com CSS</h1>
+            <p class="subtitle">Aprendendo CSS passo a passo</p>
+        </header>
 
-    <section style="margin-bottom:16px;">
-      <h2 style="margin:0 0 8px 0; font-size:18px;">Sobre</h2>
-      <p style="margin:0; color:#333;">
-        Apaixonado por unir arte e conhecimento, atuo como professor de música lecionando teoria musical para diferentes faixas etárias. Sou pianista, compositor e educador com formação em Licenciatura em Música (UNINTER) e cursos complementares em piano e composição. Tenho experiência em design gráfico e atualmente curso Técnico em Desenvolvimento de Sistemas no SENAI-BA, buscando integrar ferramentas digitais à educação musical.
-      </p>
-      <p style="margin:8px 0 0 0;">Aberto a conexões, colaborações e projetos nas áreas de educação musical, produção artística e tecnologia aplicada à música.</p>
-    </section>
+        <!-- Menu de Navegação -->
+        <nav class="main-nav">
+            <div><a href="#sec-intro">Introdução</a></div>
+            <div><a href="#sec-layout">Layout com DIVs</a></div>
+            <div><a href="#sec-colors">Cores e Gradientes</a></div>
+            <div><a href="#sec-extras">Propriedades Extras</a></div>
+        </nav>
 
-    <section style="margin-bottom:16px;">
-      <h2 style="margin:0 0 8px 0; font-size:18px;">Experiência</h2>
+        <!-- Seção 1 - Introdução -->
+        <section id="sec-intro" class="section">
+            <h2>Introdução ao CSS</h2>
+            <p>CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata).</p>
+            <p>Você pode aplicar CSS de três formas:</p>
+            <ul>
+                <li>Inline (dentro da tag HTML)</li>
+                <li>Interno (dentro da tag &lt;style&gt;)</li>
+                <li>Externo (arquivo .css separado)</li>
+            </ul>
+        </section>
 
-      <article style="margin-bottom:10px;">
-        <strong>Professor de Música — Conservatório Municipal de Música de Vitória da Conquista</strong>
-        <div style="font-size:13px; color:#555;">Fev de 2025 — Presente · Vitória da Conquista, BA (Presencial)</div>
-        <p style="margin:6px 0 0 0;">Ensino de teoria musical e atividades práticas para alunos de diversas idades; desenvolvimento de materiais didáticos e projetos pedagógicos.</p>
-        <img src="Imagens/Certificados/concurso.jpeg" style="width:140px; height:90px; object-fit:cover; border-radius:4px;">
-    </article>
+        <!-- Seção 2 - Trabalhando com DIV - Usada para agrupar elementos e organizar o layout de uma página -->
+        <section id="sec-layout" class="section">
+            <h2>Trabalhando com DIV</h2>
+            <div class="box-principal">Conteúdo Principal</div> <!-- Box: Caixa-->
+        </section>
 
-      <article style="margin-bottom:10px;">
-        <strong>Designer Gráfico — CENTRAL INFORMÁTICA e GRÁFICA RÁPIDA</strong>
-        <div style="font-size:13px; color:#555;">Jun de 2024 — Jan de 2025 · Vitória da Conquista, BA</div>
-        <p style="margin:6px 0 0 0;">Criação de peças gráficas, arte-finalização e comunicação visual; aplicação de conceitos de design em materiais educativos.</p>
-      </article>
+        <!-- Seção 3 - Alinhamento com DIVs -->
+        <section id="sec-alinhamento" class="section">
+            <h2>Alinhamento com DIVs</h2>
+            <div class="div-box"> 
+                <div id="box1" class="box">Div 1</div>
+                <div id="box2" class="box">Div 2</div>
+                <Div id="box3" class="box">Div 3</div>
+            </div>
+            <div class="div-box"> 
+                <div id="box4" class="box">Div 4</div>
+                <div id="box5" class="box">Div 5</div>
+                <Div id="box6" class="box">Div 6</div>
+            </div>
+        </section>
 
-      <article>
-        <strong>Formação em Piano — Conservatório de Música Vitória da Conquista</strong>
-        <div style="font-size:13px; color:#555;">Fev de 2016 — Dez de 2023</div>
-        <p style="margin:6px 0 0 0;">Formação técnica-profissionalizante em piano, com estudos de harmonia, percepção, canto coral e prática de conjunto.</p>
-        <img src="Imagens/Certificados/conservatório_diploma.jpeg" style="width:140px; height:90px; object-fit:cover; border-radius:4px;">  
-        <img src="Imagens/Certificados/conservatório_grade.jpeg" style="width:140px; height:90px; object-fit:cover; border-radius:4px;">  
-      </article>
-    </section>
 
-    <section style="margin-bottom:16px;">
-      <h2 style="margin:0 0 8px 0; font-size:18px;">Formação</h2>
+        <!-- Seção 4 - Cores e Gradientes -->
+        <section id="sec-colors" class="section">
+            <div>
+                <h2>Cores e Gradientes</h2>
+            </div>
+            <div class="cores">
+                <div class="color-box color1">Radial Gradient</div>
+                <div class="color-box color2">Linear Gradient</div>
+                <div class="color-box color3">Linear Gradient 2</div>
+                <div class="color-box color4">Linear Gradient 3</div>
+                <div class="color-box color5">Linear Rainbow</div>
+            </div>
+        </section>
 
-      <div style="margin-bottom:8px;">
-        <strong>Licenciatura — Música, UNINTER (Centro Universitário Internacional)</strong>
-        <div style="font-size:13px; color:#555;">Jan de 2025 — Dez de 2028 (em curso)</div>
-        <div style="font-size:13px; color:#555; margin-top:4px;">Competências: Educação musical, composição, regência.</div>
-      </div>
+        <!-- Seção 5 - Propriedades Extras -->
+        <section id="sec-extras" class="section">
+            <div>
+                <h2>Outras Propriedades Básicas</h2>
+            </div>
+            <div class="extras">
+                <div class="extra-box border-box">Bordas e Padding</div>
+                <div class="extra-box hover-box">Hover Effect</div>
+                <div class="extra-box float-box">Float Example</div>
+            </div>
+        </section>
 
-      <div style="margin-bottom:8px;">
-        <strong>Técnico — Desenvolvimento de Sistemas, SENAI-BA</strong>
-        <div style="font-size:13px; color:#555;">Ago de 2024 — Jul de 2026 (em curso)</div>
-        <div style="font-size:13px; color:#555; margin-top:4px;">Competências: Programação, desenvolvimento de software e soluções digitais.</div>
-      </div>
-
-      <div>
-        <strong>Ensino Fundamental e Médio — Colégio Nossa Senhora de Fátima Sacramentinas</strong>
-        <div style="font-size:13px; color:#555;">Fev de 2013 — Dez de 2023</div>
-        <img src="Imagens/Certificados/historico escolar.jpeg" style="width:140px; height:90px; object-fit:cover; border-radius:4px;">  
-      </div>
-    </section>
-
-    <section style="margin-bottom:16px;">
-      <h2 style="margin:0 0 8px 0; font-size:18px;">Certificações & Cursos</h2>
-
-      <ul style="margin:0; padding-left:20px;">
-        <li>
-          <strong>Curso de Composição Musical — Franz Ventura</strong>
-          <div style="font-size:13px; color:#555;">Verificação: Out de 2024</div>
-          <img src="Imagens/Certificados/composicao.jpeg" style="width:140px; height:90px; object-fit:cover; border-radius:4px;">  
-        </li>
-        <li style="margin-top:6px;">
-          <strong>Curso "Piano Além das Teclas" — Talita Gondim</strong>
-          <div style="font-size:13px; color:#555;">Verificação: Set de 2021</div>
-          <img src="Imagens/Certificados/piano_alem_das_teclas.jpeg" style="width:140px; height:90px; object-fit:cover; border-radius:4px;">  
-        </li>
-        <li style="margin-top:6px;">
-          <strong>Curso "Partitura — Método Definitivo" — Franz Ventura</strong>
-          <div style="font-size:13px; color:#555;">Verificação: Mai de 2021</div>
-          <img src="Imagens/Certificados/partitura.jpeg" style="width:140px; height:90px; object-fit:cover; border-radius:4px;">  
-        </li>
-      </ul>
-    </section>
-
-    <section style="margin-bottom:16px;">
-      <h2 style="margin:0 0 8px 0; font-size:18px;">Competências</h2>
-      <ul style="margin:0; padding-left:20px; color:#333;">
-        <li>Ensino de piano e teoria musical</li>
-        <li>Composição e arranjos</li>
-        <li>Didática e liderança em sala de aula</li>
-        <li>Criação de materiais didáticos e visuais (design gráfico)</li>
-        <li>Programação e soluções tecnológicas aplicadas à educação</li>
-        <li>Harmonia, percepção e prática de conjunto</li>
-      </ul>
-    </section>
-
-    <section style="margin-bottom:16px;">
-      <h2 style="margin:0 0 8px 0; font-size:18px;">Reconhecimentos</h2>
-      <p style="margin:0; color:#333;">Liderança de Classe — Colégio Nossa Senhora de Fátima Sacramentinas (Set de 2023)</p>
-      <img src="Imagens/Certificados/lideranca.jpeg" style="width:140px; height:90px; object-fit:cover; border-radius:4px;">  
-    </section>
-
-    <footer style="border-top:1px solid #eee; padding-top:12px; margin-top:10px; font-size:14px; color:#555;">
-      <p style="margin:0 0 6px 0;"><strong>Contato</strong></p>
-      <ul style="margin:0; padding-left:18px; list-style-type:none;">
-        <li>Email: <a href="mailto:hebertluisoficial@gmail.com" style="color:#0a66c2; text-decoration:none;">hebertluisoficial@gmail.com</a></li>
-        <li>Telefone: <a href="tel:+5577981541712" style="color:#0a66c2; text-decoration:none;">(77) 98154-1712</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/hebertluis/" target="_blank" style="color:#0a66c2; text-decoration:none;">linkedin.com/in/hebertluis/</a></li>
-      </ul>
-    </footer>
-
-  </div>
-
-  <section id="newsletter" aria-labelledby="titulo-newsletter" style="max-width:900px; margin:16px auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
-    <h2 id="titulo-newsletter" style="margin:0 0 8px 0; font-size:18px;">Assine a Newsletter</h2>
-    <p style="margin:0 0 10px 0; color:#333;">Receba conteúdos sobre piano, teoria musical e tecnologia aplicada à música. É rápido e você pode cancelar a qualquer momento.</p>
-
-    <form action="#" method="post" style="display:grid; gap:12px;" aria-describedby="newsletter-ajuda">
-      <small id="newsletter-ajuda" style="color:#666;">Campos com * são obrigatórios.</small>
-
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
-        <div>
-          <label for="nl-nome" style="display:block; font-weight:600;">Nome *</label>
-          <input id="nl-nome" name="nome" type="text" required placeholder="Seu nome completo" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;" />
-        </div>
-        <div>
-          <label for="nl-email" style="display:block; font-weight:600;">Email *</label>
-          <input id="nl-email" name="email" type="email" required placeholder="voce@email.com" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;" />
-        </div>
-      </div>
-
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
-        <div>
-          <label for="nl-telefone" style="display:block; font-weight:600;">Telefone</label>
-          <input id="nl-telefone" name="telefone" type="tel" placeholder="(77) 90000-0000" pattern="\(\d{2}\) \d{4,5}-\d{4}" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;" />
-        </div>
-        <div>
-          <label for="nl-cidade" style="display:block; font-weight:600;">Cidade</label>
-          <input id="nl-cidade" name="cidade" type="text" list="lista-cidades" placeholder="Ex.: Vitória da Conquista" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;" />
-          <datalist id="lista-cidades">
-            <option value="Vitória da Conquista"></option>
-            <option value="Salvador"></option>
-            <option value="Rio de Janeiro"></option>
-            <option value="São Paulo"></option>
-          </datalist>
-        </div>
-      </div>
-
-      <fieldset style="border:1px solid #eee; border-radius:8px; padding:12px;">
-        <legend style="font-weight:600;">Quais temas você quer receber? *</legend>
-        <label style="display:block; margin:4px 0;"><input type="checkbox" name="temas" value="piano" required> Piano</label>
-        <label style="display:block; margin:4px 0;"><input type="checkbox" name="temas" value="teoria"> Teoria Musical</label>
-        <label style="display:block; margin:4px 0;"><input type="checkbox" name="temas" value="tecnologia"> Tecnologia & Educação</label>
-      </fieldset>
-
-      <fieldset style="border:1px solid #eee; border-radius:8px; padding:12px;">
-        <legend style="font-weight:600;">Periodicidade preferida</legend>
-        <label style="display:block; margin:4px 0;"><input type="radio" name="periodicidade" value="semanal" checked> Semanal</label>
-        <label style="display:block; margin:4px 0;"><input type="radio" name="periodicidade" value="quinzenal"> Quinzenal</label>
-        <label style="display:block; margin:4px 0;"><input type="radio" name="periodicidade" value="mensal"> Mensal</label>
-      </fieldset>
-
-      <div>
-        <label for="nl-formato" style="display:block; font-weight:600;">Formato de conteúdo</label>
-        <select id="nl-formato" name="formato" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;">
-          <option value="html">HTML (recomendado)</option>
-          <option value="texto">Somente texto</option>
-          <option value="pdf">Resumo em PDF</option>
-        </select>
-      </div>
-
-      <label style="display:block; font-size:13px; color:#444;">
-        <input type="checkbox" name="consentimento" required> Autorizo o envio de emails e concordo com a política de privacidade.
-      </label>
-
-      <div style="display:flex; gap:10px; align-items:center;">
-        <button type="submit" style="cursor:pointer; padding:10px 14px; border:none; border-radius:8px; background:#0a66c2; color:#fff; font-weight:600;">Quero receber</button>
-        <button type="reset" style="cursor:pointer; padding:10px 14px; border:1px solid #ddd; border-radius:8px; background:#fff;">Limpar</button>
-      </div>
-    </form>
-  </section>
-
-  <section id="tabela-competencias" aria-labelledby="titulo-competencias-tabela" style="max-width:900px; margin:16px auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
-    <h2 id="titulo-competencias-tabela" style="margin:0 0 8px 0; font-size:18px;">Resumo de Competências</h2>
-    <div style="overflow-x:auto;">
-      <table style="width:100%; border-collapse:collapse; font-size:14px;">
-        <caption style="text-align:left; margin-bottom:6px; color:#555;">Classificação por área e nível de conforto atual</caption>
-        <thead>
-          <tr>
-            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Área</th>
-            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Habilidades</th>
-            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Nível</th>
-            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Aplicações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Música</th>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Piano, teoria, harmonia, percepção</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Avançado</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Aulas, arranjos, prática de conjunto</td>
-          </tr>
-          <tr>
-            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Educação</th>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Didática, liderança, materiais didáticos</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Avançado</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Planejamento de aulas e projetos</td>
-          </tr>
-          <tr>
-            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Tecnologia</th>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Programação, soluções digitais, design</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Intermediário</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Ferramentas para educação musical</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section id="agenda" aria-labelledby="titulo-agenda" style="max-width:900px; margin:16px auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
-    <h2 id="titulo-agenda" style="margin:0 0 8px 0; font-size:18px;">Agenda de Disponibilidade</h2>
-    <div style="overflow-x:auto;">
-      <table style="width:100%; border-collapse:collapse; font-size:14px;">
-        <caption style="text-align:left; margin-bottom:6px; color:#555;">Horários sujeitos a ajuste conforme calendário escolar</caption>
-        <thead>
-          <tr>
-            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Dia</th>
-            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Manhã</th>
-            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Tarde</th>
-            <th scope="col" style="text-align:left; border-bottom:2px solid #eee; padding:8px;">Noite</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Segunda</th>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Aulas</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
-          </tr>
-          <tr>
-            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Terça</th>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Disponível</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Ensaios</td>
-          </tr>
-          <tr>
-            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Quarta</th>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Aulas</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Disponível</td>
-          </tr>
-          <tr>
-            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Quinta</th>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Disponível</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
-          </tr>
-          <tr>
-            <th scope="row" style="text-align:left; border-bottom:1px solid #f2f2f2; padding:8px;">Sexta</th>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">Projetos</td>
-            <td style="border-bottom:1px solid #f2f2f2; padding:8px;">—</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section id="faq" aria-labelledby="titulo-faq" style="max-width:900px; margin:16px auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
-    <h2 id="titulo-faq" style="margin:0 0 8px 0; font-size:18px;">Dúvidas Frequentes</h2>
-    <details style="border:1px solid #eee; border-radius:8px; padding:10px; margin-bottom:8px;">
-      <summary style="cursor:pointer; font-weight:600;">Você atende aulas particulares?</summary>
-      <p style="margin:8px 0 0 0;">Sim, mediante disponibilidade na agenda acima. Use o formulário de newsletter para indicar interesse.</p>
-    </details>
-    <details style="border:1px solid #eee; border-radius:8px; padding:10px;">
-      <summary style="cursor:pointer; font-weight:600;">Quais níveis você atende?</summary>
-      <p style="margin:8px 0 0 0;">Do iniciante ao intermediário/avançado em teoria musical, e do iniciante ao intermediário em piano.</p>
-    </details>
-  </section>
-
-  <aside id="download" aria-label="Download do currículo" style="max-width:900px; margin:16px auto; padding:18px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06); background:#fafafa;">
-    <p style="margin:0;">Quer compartilhar este currículo?</p>
-    <div style="margin-top:8px; display:flex; gap:10px;">
-      <a href="#" style="cursor:pointer; padding:10px 14px; border:none; border-radius:8px; background:#0a66c2; color:#fff; text-decoration:none; font-weight:600;">Baixar em PDF</a>
-      <a href="#" style="cursor:pointer; padding:10px 14px; border:1px solid #ddd; border-radius:8px; background:#fff; text-decoration:none;">Versão para impressão</a>
-    </div>
-  </aside>
-</body>
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p>© 2025 Meu Primeiro Site CSS</p>
+        </footer>
+    </body>
 </html>
